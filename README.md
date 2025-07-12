@@ -1,5 +1,4 @@
-🧓 ElderAid
-ElderAid is a Django-based web application that allows elderly users and their caretakers to explore, book, and manage essential care services. With a clean interface and intuitive flow, it simplifies elder care service access while ensuring reliability and performance.
+🧓 **ElderAid** is a Django-based web application that allows elderly users and their caretakers to explore, book, and manage essential care services. With a clean interface and intuitive flow, it simplifies elder care service access while ensuring reliability and performance.
 
 🚀 Features
 🧭 Explore Services — Public access to view all available services and sub-services
