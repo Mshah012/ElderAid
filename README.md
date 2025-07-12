@@ -17,11 +17,10 @@ ElderAid is a full-stack Django web application designed to make elder care serv
 🛠️ **Tech Stack**
 A balanced mix of modern web tools:
 
-  🧠 Backend: Django (Python 3.10+)
-
-  🖼️ Frontend: Bootstrap 5, jQuery, HTML5, CSS3, Ajax
-
-  🛢️ Database: PostgreSQL
-
-  🔌 APIs: Django REST Framework
+| 🔧 Layer     | ⚙️ Technologies Used                   |
+| ------------ | -------------------------------------- |
+| 🧠 Backend   | Django (Python 3.10+)                  |
+| 🖼️ Frontend | Bootstrap 5, jQuery, HTML5, CSS3, AJAX |
+| 🛢️ Database | PostgreSQL                             |
+| 🔌 APIs      | Django REST Framework (DRF)            |
 
