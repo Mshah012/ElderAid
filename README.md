@@ -13,6 +13,7 @@ ElderAid is a full-stack Django web application designed to make elder care serv
 | 📡 REST API (DRF)               | Plug-and-play API for future integrations (mobile app, SPA frontend, etc.) |
 | 🔁 Seamless Navigation + Logout | Custom logout flow designed with user simplicity in mind                   |
 
+
 🛠️ **Tech Stack**
 A balanced mix of modern web tools:
 
