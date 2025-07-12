@@ -1,26 +1,24 @@
-🧓 **ElderAid** is a Django-based web application that allows elderly users and their caretakers to explore, book, and manage essential care services. With a clean interface and intuitive flow, it simplifies elder care service access while ensuring reliability and performance.
+🧓 ElderAid – Empowering Elder Care with Technology
+ElderAid is a full-stack Django web application designed to make elder care services easy to explore, book, and manage. Tailored for elderly users and caretakers, it offers a seamless experience from browsing to booking — all in a clean, responsive UI.
 
-🚀 **Features**
-🧭 Explore Services — Public access to view all available services and sub-services
+🚀 Key Features at a Glance
+🌟 Feature	✅ Description
+🧭 Explore Services	Browse all services & sub-services publicly without login
+📝 Smart Booking System	Book services with auto-calculated price based on number of days
+🔐 Session-Based Login	Login required only during booking confirmation
+💡 Dynamic Pricing Logic	Price
+🎨 Bootstrap 5 UI	Mobile-responsive, accessible design using Bootstrap 5 & jQuery
+📡 REST API (DRF)	Plug-and-play API for future integrations (mobile app, SPA frontend, etc.)
+🔁 Seamless Navigation + Logout	Custom logout flow designed with user simplicity in mind
 
-📝 Booking System — Book care services with price automatically calculated by duration
+🛠️ Tech Stack
+A balanced mix of modern web tools:
 
-🔐 Session-Based Login — Login only required at the time of booking confirmation
+🧠 Backend: Django (Python 3.10+)
 
-🧮 Dynamic Pricing — Final cost computed based on the number of service days
+🖼️ Frontend: Bootstrap 5, jQuery, HTML5, CSS3, Ajax
 
-🎨 Bootstrap 5 UI — Clean, mobile-friendly design using Bootstrap 5 and jQuery
+🛢️ Database: PostgreSQL
 
-🧾 REST API Support — Extendable backend with Django REST Framework for API access
-
-💬 Custom Logout & Navigation — Smooth flow tailored to elderly users' needs
-
-🛠️ **Tech Stack**
-Backend: Django (Python 3)
-
-Frontend: Bootstrap 5, jQuery, HTML5, CSS3
-
-Database: PostgreSQL
-
-APIs: Django REST Framework (DRF)
+🔌 APIs: Django REST Framework
 
