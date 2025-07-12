@@ -1,0 +1,39 @@
+{%extends 'elder_subservices/base.html'%}
+{%block content%}
+<a href="{%url 'subservices_insert'%}"class="btn btn-outline-success">
+    <i class="bi bi-database-add"></i></a>
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <td>Subservice ID</td>
+            <td>Subservice Name</td>
+            <td>Price</td>
+            <td>Image</td>
+            <td>Modify</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        {%for sub in subservices_list%}
+        <tr>
+            <td>{{sub.subservice_id}}</td>
+            <td>{{sub.subservice_name}}</td>
+            <td>{{sub.price}}</td>
+            <td><img src="{{sub.image.url}}" width="200" height="150"></td>
+            <td>
+                <a href="{%url 'subservices_update' sub.id%}" class="btn text-secondary px-0">
+                    <i class="bi bi-pencil-square"></i> </a>
+            </td>
+            <td>
+            <form action="{%url 'subservices_delete' sub.id%}" method="POST">
+                {%csrf_token%}
+                <button class="submit" class="btn">
+                    <i class="bi bi-trash3-fill"></i>
+                </button>
+            </form>
+            </td>
+        </tr>
+        {%endfor%}
+    </tbody>
+</table>
+{%endblock content%}

@@ -1,0 +1,46 @@
+{%extends 'elder_subservices/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+<form action="" method="POST" autocomplete="off" enctype="multipart/form-data">
+{%csrf_token%}
+{{form.subservice_id|as_crispy_field}}
+{{form.subservice_name|as_crispy_field}}
+{{form.price|as_crispy_field}}
+<div class="row g-3 align-items-center mb-3">
+    <div class="col-auto">
+        {{form.image|as_crispy_field}} 
+    </div>
+    <div class="col-auto">
+        <img id="imagePreview" src="#" alt="Image Preview" class="img-thumbnail" style="display:none; max-height: 100px;"/>
+    </div>
+</div>
+
+{{form.service_id|as_crispy_field}}
+<br>
+<button type="submit" class="btn btn-success"><i class="bi bi-download"></i>
+    Save Button
+</button>
+<a href="{%url 'subservices_list'%}" class="btn btn-secondary btn-block btn-lg">
+    <i class="bi bi-back"></i> Subservices List </a>
+<hr>
+<div>
+<a href="{%url 'services_list'%}" class="btn btn-secondary btn-block btn-lg">
+    <i class="bi bi-back"></i>Go to Services List </a>  
+</div>
+</form>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const input = document.getElementById("id_product_image");  // the default Django form field ID
+        const preview = document.getElementById("imagePreview");
+    
+        input.addEventListener("change", function () {
+            const file = input.files[0];
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            }
+        });
+    });
+    </script>
+    
+{%endblock content%}
